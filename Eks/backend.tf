@@ -1,6 +1,6 @@
 terraform{
     backend "s3" {
-        bucket="henrydevopsproject"
+        bucket="dmainproject"
         key="jekins/terrafrom.tfstate"
         region="us-west-2"
     }
