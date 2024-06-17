@@ -14,7 +14,6 @@ module "vpc" {
   tags = {
     "kubernetes.io/cluster/my-eks-cluster" = "shared"
   }
-
   public_subnet_tags = {
     "kubernetes.io/cluster/my-eks-cluster" = "shared"
     "kubernetes.io/role/elb"               = 1
@@ -29,7 +28,6 @@ module "vpc" {
 data "aws_availability_zones" "available" {
   state = "available"
 }
-
 module "eks" {
   source = "terraform-aws-modules/eks/aws"
   cluster_name    = "my-eks-cluster"

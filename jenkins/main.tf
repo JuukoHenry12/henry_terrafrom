@@ -25,7 +25,6 @@ module "sg" {
   name        = "jenkins-sg"
   description = "Security Group for Jenkins Server"
   vpc_id      = module.vpc.vpc_id
-
   ingress_with_cidr_blocks = [
     {
       from_port   = 8080
